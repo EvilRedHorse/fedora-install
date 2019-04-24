@@ -32,3 +32,6 @@ install ewbf - zcash/zec - cuda miner
 
 # commit.sh
 simple commit
+
+# install-c folder - sixpair sixpair.c
+used to pair controllers similar to the PS3 with bluetooth
