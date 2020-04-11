@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/bash --posix
 
 # create miner overclock script
 echo -e "\ncreate miner overclock script...\n\n"

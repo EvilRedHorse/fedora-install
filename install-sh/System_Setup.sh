@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/bash --posix
 # author: EvilRedHorse
 # name: System_Setup.sh
 # usage: Post-Installation Fedora Setup eg. selinux, vlc, samba

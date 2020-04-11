@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/bash --posix
 # author: EvilRedHorse
 # name: TigerVNC.sh
 

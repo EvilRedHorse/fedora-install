@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/bash --posix
 # author: EvilRedHorse
 # name: Fedora_Rawhide_Setup.sh
 # usage: Post-Installation Fedora Setup eg. network, selinux, samba, mail, web, database, torrent, virtd 
@@ -69,7 +69,7 @@ yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusi
 yum localinstall --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
 
 # printf "Updating to Rawhide\n"
-# yum -y install fedora-release-rawhide
+dnf -y install fedora-repos-rawhide rpmfusion-nonfree-release-rawhide.noarch rpmfusion-free-release-rawhide.noarch
 
 # setup mysqld service
 printf "Installing MySQL Database/n"

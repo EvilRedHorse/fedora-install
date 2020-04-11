@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! /usr/bin/bash --posix
 # create boot-sh.desktop file to boot miner during login...
 
 echo -e "create boot-sh.desktop file to boot miner during login\nPlease input script:    \n\n"

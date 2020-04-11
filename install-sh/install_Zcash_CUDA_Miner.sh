@@ -1,16 +1,16 @@
-#! /usr/bin/sh
+#! /usr/bin/bash --posix
 
 echo -e "Downloading miner and extracting..."
 wget -qO- https://github.com/nanopool/ewbf-miner/releases/download/v0.3.4b/Zec.miner.0.3.4b.Linux.Bin.tar.gz | tar xvz miner 
 mkdir ~/Public/Zcash
 cp miner ~/Public/Zcash
 chmod u+x ~/Public/Zcash/miner
-
+rm miner
 # create miner start script
 echo -e "\ncreate miner start script...\n\n"
 cat <<EOT >> ~/Public/Zcash/start_miner.sh
 
-#! /bin/sh
+#! /usr/bin/bash --posix
 
 # start miner
 sudo -E ~/Public/Zcash/miner  --eexit 1 --config ~/Public/Zcash/intensity.cfg
@@ -23,7 +23,6 @@ chmod u+x ~/Public/Zcash/start_miner.sh
 # create miner config file
 echo -e "\ncreate default miner config file...\n\n"
 cat <<EOT >> ~/Public/Zcash/intensity.cfg
-#! /bin/sh
 # miner config file
 
 [common]
@@ -35,9 +34,9 @@ templimit    80
 pec          0
 
 [server]
-server us.zec.slushpool.com
-port   4444
-user   RASPIE45.Worker_2
+server pool.equihash.ca
+port   4434
+user   t1UpTopzDnoB1WBt53H4w39TftGrQjgaKE5.workerX
 pass   x
 
 EOT

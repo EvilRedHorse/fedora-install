@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/bash --posix
 
 # script to setup a fedora + nvidia based miner
 

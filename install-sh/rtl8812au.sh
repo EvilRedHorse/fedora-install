@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/bash --posix
 
 # script to install rtl8812au drivers using dmks
 

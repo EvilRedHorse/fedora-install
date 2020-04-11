@@ -1,4 +1,4 @@
-#!//bin/bash
+#! /usr/bin/bash --posix
 # OPENWRT_Prerequisite.sh
 mkdir openwrt
 su -c 'chmod 775 openwrt'

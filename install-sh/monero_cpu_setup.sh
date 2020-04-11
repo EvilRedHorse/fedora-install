@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! /usr/bin/bash --posix
 # Fedora just CPU
 sudo dnf -y install gcc gcc-c++ hwloc-devel libmicrohttpd-devel libstdc++-static make openssl-devel cmake
 git clone https://github.com/fireice-uk/xmr-stak.git ~/Public/xmr-stak

@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! /usr/bin/bash --posix
 # create xorg.conf
 
 echo -e "create xorg.conf...\n\n"
@@ -12,11 +12,11 @@ EndSection
 EOT
 
 # set permission to allow copying 
-chmod u+r ~/Public/xorg.conf
+sudo chmod a+r ~/Public/xorg.conf
 
 sudo -E cp ~/Public/xorg.conf /etc/X11/xorg.conf
 
 rm ~/Public/xorg.conf
-sudo dnf -y install nvidia-xconfig
+# sudo dnf -y install nvidia-xconfig
 sudo -E nvidia-xconfig -s
 echo -e "done"

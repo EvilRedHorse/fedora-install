@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! /usr/bin/bash --posix
 # Enable user gdm autologin
 
 sudo -E sed -i '/AutomaticLoginEnable=/ c\AutomaticLoginEnable=True' /etc/gdm/custom.conf
