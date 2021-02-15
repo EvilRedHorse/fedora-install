@@ -7,7 +7,7 @@ sed -i '/constexpr double fDevDonationLevel = 2.0 \/ 100.0;/ c\constexpr double 
 mkdir ~/Public/xmr-stak/build
 cd ~/Public/xmr-stak/build
 #cmake -DOpenCL_ENABLE=OFF ..
-cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=ON ..
+cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF -DMICROHTTPD_ENABLE=OFF ..
 make install
 echo -e "done"
 
