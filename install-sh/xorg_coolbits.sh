@@ -1,7 +1,9 @@
 #! /usr/bin/bash --posix
 # create xorg.conf
 
-echo -e "create xorg.conf...\n\n"
+# xorg.conf with Coolbits set to 12
+printf "${GREEN}Create xorg.conf with Coolbits set to 12... \n${NORMAL}"
+
 cat <<EOT >> ~/Public/xorg.conf
 Section "Device" 
 Identifier "NVIDIA Card" 
@@ -13,10 +15,6 @@ EOT
 
 # set permission to allow copying 
 sudo chmod a+r ~/Public/xorg.conf
+sudo -E mv ~/Public/xorg.conf /etc/X11/xorg.conf
 
-sudo -E cp ~/Public/xorg.conf /etc/X11/xorg.conf
-
-rm ~/Public/xorg.conf
-# sudo dnf -y install nvidia-xconfig
-sudo -E nvidia-xconfig -s
-echo -e "done"
+printf "done... \n"
